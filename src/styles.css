@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar-wrap {
+	position: fixed;
+    right: 0;
+    margin: 20px;
+    text-align: right;
+}
+
+.sidebar .title {
+	font-size: 28px;
+	margin: 0 0 25px 0;
+	color: rgb(38, 75, 130);
+	font-weight: 700;
+}
+
+.sidebar .subtitle {
+	font-size: 16px;
+}
+
+.postavshiki, .money {
+	font-size: 22px;
+	color: rgb(38, 75, 130);
+}
+
+.postavshiki span, .money span {
+	font-size: 26px;
+	color: #fff;
+	font-weight: 800;
+}
+
+.sidebar .button {
+	display: inline-block;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    clear: both;
+}
+
+.notactive {
+	background-color: #fcfcfc;
+}
