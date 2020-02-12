@@ -5,7 +5,7 @@ import _ from "lodash";
 import { hideInfoblock } from '../../redux/actions';
 import "./styles.css";
 
-class FloorSwitcher extends React.Component {
+class InfoBlock extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
@@ -37,4 +37,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   { hideInfoblock },
-)(FloorSwitcher);
+)(InfoBlock);
