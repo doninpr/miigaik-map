@@ -7,8 +7,8 @@ export const MAPBOX = {
     height: '100vh',
     latitude: 55.76344814326471,
     longitude: 37.66208383567045,
-    zoom: 18,
-    bearing: 153,
-    mapStyle: 'mapbox://styles/doninpr/ck69fmcfm27f51is887bif47p',
+    zoom: 16,
+    bearing: 0,
+    mapStyle: 'mapbox://styles/doninpr/ck7m112b511j81iuomxwtudxx',
   }
 }

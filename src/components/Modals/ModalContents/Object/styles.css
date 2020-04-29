@@ -1,0 +1,15 @@
+
+.object-build, .object-floor {
+	font-size: 13px;
+	color: #8c8c8c;
+}
+.object-floor {
+	text-align: right;	
+}
+.object_buttons-wrap {
+	margin-top: 15px;
+}
+
+.object_buttons-wrap button {
+	width: 100%;
+}

@@ -6,46 +6,79 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.sidebar-wrap {
+.header_logo {
 	position: fixed;
-    right: 0;
-    margin: 20px;
-    text-align: right;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
 }
 
-.sidebar .title {
-	font-size: 28px;
-	margin: 0 0 25px 0;
-	color: rgb(38, 75, 130);
-	font-weight: 700;
+.header_logo img {
+	width: 50%;
+	max-width: 200px;
 }
 
-.sidebar .subtitle {
+.modal-content {
+	border-radius: .3rem .3rem 0 0!important;
+}
+
+.modal-full .modal-content {
+	height: 90vh!important;
+}
+
+.modal-small .modal-content {
+	min-height: 20vh!important;
+}
+
+.modal-dialog-centered {
+	align-items: flex-end!important;
+	min-height: 100%!important;
+}
+
+.modal.fade .modal-dialog {
+	transform: translate(0,100px)!important;
+}
+
+.modal.show .modal-dialog {
+    transform: none!important;
+}
+
+.modal-body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.modal-backdrop {
+	display: none;
+}
+
+
+.btn-primary {
+	background-color: rgba(41, 130, 192, 0.8)!important;
+    border-color: rgba(41, 130, 192, 1)!important;
+}
+.btn-primary:hover {
+	background-color: rgba(41, 130, 192, 1)!important;
+    border-color: rgba(41, 130, 192, 1)!important;
+}
+
+.modal-small {
+	pointer-events: none;
+}
+
+#contained-modal-title-vcenter {
 	font-size: 16px;
 }
 
-.postavshiki, .money {
-	font-size: 22px;
-	color: rgb(38, 75, 130);
+.modal-lg, .modal-xl {
+    margin: 0 auto!important;
 }
 
-.postavshiki span, .money span {
-	font-size: 26px;
-	color: #fff;
-	font-weight: 800;
+@media (min-width: 992px) {
+	.modal-lg, .modal-xl {
+	    max-width: 600px!important;
+	}
 }
 
-.sidebar .button {
-	display: inline-block;
-    padding: 10px 15px;
-    margin: 15px 0;
-    font-size: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    clear: both;
-}
-
-.notactive {
-	background-color: #fcfcfc;
-}

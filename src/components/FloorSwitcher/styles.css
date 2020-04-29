@@ -1,19 +1,27 @@
 #floorSwitcher {
   position: fixed;
-  right: 15px;
-  top: 15px;
+  left: 10px;
+  top: 10px;
+}
+
+.floor-switcher-outer {
+  text-align: right;
 }
 
 .floor-switcher-inner {
-  background-color: #fff;
+  background-color: #ffffffdb;
   border-radius: 10px;
-  padding: 10px 0;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
 }
 
 .floor-element {
-  padding: 5px 10px 5px 10px;
   cursor: pointer;
-  border-bottom: 1px solid #000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .floor-element:last-child {
@@ -25,6 +33,10 @@
 }
 
 .current-floor {
-  background-color: #9fd299!important;
+  background-color: #2982c0!important;
   color: #fff; 
+}
+
+.floor-switcher-closer {
+  margin: 10px auto;
 }

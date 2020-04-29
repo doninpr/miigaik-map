@@ -1,0 +1,29 @@
+#bottomBar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	background-color: #fff;
+	height: 50px;
+	box-shadow: 0px 2px 8px 3px rgba(0,0,0,.2);
+}
+.bottom-bar_inner {
+	margin: 5px auto;
+    max-width: 300px;
+}
+
+.bottom-bar_button {
+	text-align: center;
+}
+
+.bottom-bar_button img {
+	height: 25px;
+}
+
+.bottom-bar_button p {
+	font-size: 11px;
+	margin-top: 2px;
+	color: #8c8c8c;
+}
+

@@ -2,7 +2,9 @@ import React from "react";
 import { connect } from "react-redux";
 import cx from "classnames";
 import _ from "lodash";
-import { changeCurrentFloor } from '../../redux/actions';
+import { changeCurrentFloor, closeBuildLayers } from '../../redux/actions';
+import { Button } from 'react-bootstrap';
+import closeImg from '../FloorSwitcher/images/close.png';
 import "./styles.css";
 
 class FloorSwitcher extends React.Component {
@@ -17,24 +19,25 @@ class FloorSwitcher extends React.Component {
   };
 
   render() {
-
-    const floors = [
-      2,3,4,5,6
-    ];
+    const floors = _.map(this.props.floorsList, (floor) => {
+      return floor.floor;
+    }).sort().reverse();
 
     return (
       <div id="floorSwitcher">
-        <div class="floor-switcher-inner">
-          <div class="floor-buttons">
-          {
-            _.map(floors, (floor) => {
-              return (
-                <div class={cx("floor-element", { 'current-floor': (this.props.currentFloor === floor) })} data-floor={floor} onClick={(event) => this.floorClick(+event.target.dataset.floor)}>
-                  {floor}
-                </div>
-              );
-            })
-          }
+        <div className={"floor-switcher-outer"}>
+          <div className={"floor-switcher-inner"}>
+            <div className={"floor-buttons"}>
+            {
+              _.map(floors, (floor, key) => {
+                return (
+                  <div key={key} className={cx("floor-element", { 'current-floor': (this.props.currentFloor === floor) })} data-floor={floor} onClick={(event) => this.floorClick(+event.target.dataset.floor)}>
+                    {floor}
+                  </div>
+                );
+              })
+            }
+            </div>
           </div>
         </div>
       </div>
@@ -44,11 +47,12 @@ class FloorSwitcher extends React.Component {
 
 const mapStateToProps = state => {
   return {
-  	currentFloor: state.floorSwitcher.currentFloor,
+  	currentFloor: state.mapbox.floors.floorToView,
+    floorsList: state.mapbox.floors.data,
   };
 };
 
 export default connect(
   mapStateToProps,
-  { changeCurrentFloor },
+  { changeCurrentFloor, closeBuildLayers },
 )(FloorSwitcher);

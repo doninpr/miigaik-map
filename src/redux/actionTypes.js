@@ -4,3 +4,60 @@ export const MAPBOX_VIEWPORT_CHANGE = "MAPBOX_VIEWPORT_CHANGE";
 export const CHANGE_FLOOR = "CHANGE_FLOOR";
 export const SHOW_INFOBLOCK = "SHOW_INFOBLOCK";
 export const HIDE_INFOBLOCK = "HIDE_INFOBLOCK";
+
+export const API_START_BUILDS = "API_START_BUILDS";
+export const API_GET_BUILDS = "API_GET_BUILDS";
+export const API_END_BUILDS = "API_END_BUILDS";
+
+export const API_START_FLOORS = "API_START_FLOORS";
+export const API_GET_FLOORS = "API_GET_FLOORS";
+export const API_END_FLOORS = "API_END_FLOORS";
+
+export const API_START_ROOMS = "API_START_ROOMS";
+export const API_GET_ROOMS = "API_GET_ROOMS";
+export const API_END_ROOMS = "API_END_ROOMS";
+
+export const API_START_ROUTE = "API_START_ROUTE";
+export const API_GET_ROUTE = "API_GET_ROUTE";
+export const API_END_ROUTE = "API_END_ROUTE";
+
+export const CLOSE_BUILD_LAYERS = "CLOSE_BUILD_LAYERS";
+
+export const API_START_ENTERS = "API_START_ENTERS";
+export const API_GET_ENTERS = "API_GET_ENTERS";
+export const API_END_ENTERS = "API_END_ENTERS";
+
+export const ADD_BUILDS_TO_MAP = "ADD_BUILDS_TO_MAP";
+export const ADD_FLOORS_TO_MAP = "ADD_FLOORS_TO_MAP";
+export const ADD_ROOMS_TO_MAP = "ADD_ROOMS_TO_MAP";
+export const ADD_ENTERS_TO_MAP = "ADD_ENTERS_TO_MAP";
+export const ADD_ROUTE_TO_MAP = "ADD_ROUTE_TO_MAP";
+
+export const FILTERS_CHANGED = "FILTERS_CHANGED";
+
+export const SHOW_MODAL = "SHOW_MODAL";
+export const HIDE_MODAL = "HIDE_MODAL";
+
+export const API_START_ROOM = "API_START_ROOM";
+export const API_GET_ROOM = "API_GET_ROOM";
+export const API_END_ROOM = "API_END_ROOM";
+
+export const SET_BUILD_TO_VIEW = "SET_BUILD_TO_VIEW";
+
+export const ADD_ROOM_TO_MAP = "ADD_ROOM_TO_MAP";
+
+export const CLOSE_CURRENT_ROOM = "CLOSE_CURRENT_ROOM";
+
+export const CLOSE_ROUTER = "CLOSE_ROUTER";
+export const NEXT_ROUTE_STEP = "NEXT_ROUTE_STEP";
+export const PREV_ROUTE_STEP = "PREV_ROUTE_STEP";
+
+
+export const START_SEARCH = "START_SEARCH";
+export const GET_SEARCH = "GET_SEARCH";
+export const END_SEARCH = "END_SEARCH";
+
+export const CLOSE_SEARCH = "CLOSE_SEARCH";
+
+
+
