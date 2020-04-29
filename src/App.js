@@ -11,6 +11,7 @@ import { changeWindowSize } from './redux/actions';
 import "./styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logoImg from "./images/logo.png";
+import { YMInitializer } from 'react-yandex-metrika';
 
 class App extends React.Component {
   	constructor(props) {
@@ -21,6 +22,7 @@ class App extends React.Component {
   	}
 
   	componentWillMount(){
+
   		const changeWindowSizeState = () => {
   			const width = $(window).width();
   			const height = $(window).height();
@@ -47,6 +49,7 @@ class App extends React.Component {
         </div>
         <BottomBar />
         <ModalComponent />
+        <YMInitializer accounts={[62434315]} options={{webvisor: true}} />
 			</div>
 		);
   	}
