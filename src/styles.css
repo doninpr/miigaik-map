@@ -25,11 +25,21 @@ body {
 }
 
 .modal-full .modal-content {
-	height: 90vh!important;
+	height: 90%!important;
+	max-width: 500px;
+	overflow-y: scroll;
+}
+
+.modal-header {
+	position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 9;
 }
 
 .modal-small .modal-content {
 	min-height: 20vh!important;
+	max-width: 500px;
 }
 
 .modal-dialog-centered {
@@ -47,7 +57,7 @@ body {
 
 .modal-body {
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: scroll!important;
 }
 
 .modal-backdrop {
@@ -88,10 +98,9 @@ body {
 	display: block;
 }
 
-.modal {
-	bottom: 0!important;
+.modal-open .modal {
+	overflow-y: hidden!important;
 }
-
 
 
 
