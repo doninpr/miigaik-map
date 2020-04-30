@@ -82,3 +82,17 @@ body {
 	}
 }
 
+.modal-content {
+	position: fixed!important;
+	bottom: 0!important;
+	display: block;
+}
+
+.modal {
+	bottom: 0!important;
+}
+
+
+
+
+

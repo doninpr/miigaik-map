@@ -156,7 +156,7 @@ class MapBox extends React.Component {
 
     if(targetLayer === "rooms_source" && event.features[0].properties.status !== "false"){
       this.props.fetchRoomById(event.features[0].properties.id);
-      this.props.showModal({ header: ("Ауд. " + event.features[0].properties.numb), content: ModalObjectContent, className: "modal-small" });
+      this.props.showModal({ header: ("Ауд. " + event.features[0].properties.numb), content: ModalObjectContent, isMapboxObject: true, className: "modal-small" });
       //this.props.fetchRouteByEnterId(event.features[0].properties.enter_id);
     }
 
